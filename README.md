@@ -61,9 +61,8 @@ This project is open-source and free to use under the MIT License.
 
 ## Author
 
-Your Name — [Your Website or GitHub](https://github.com/yourusername)
+CADEN  (https://github.com/cadenself)
 
 ---
 
-Feel free to contribute or open issues for any bugs or feature requests!
-
+Feel free to contribute or open issues for any bugs or feature requesT
