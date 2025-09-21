@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>buildwithcodewell.org – Caden Self | Freelance Coder</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="description" content="Caden Self - Freelance developer building responsive web apps.">
+  <meta property="og:title" content="buildwithcodewell.org – Caden Self | Freelance Coder">
+  <meta property="og:url" content="https://buildwithcodewell.org">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://buildwithcodewell.org" />
+
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #333;
+      --accent: #0077cc;
+      --card: #ffffff;
+      --hover: #005fa3;
+    }
+
+    body.dark-mode {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --accent: #66ccff;
+      --card: #1e1e1e;
+      --hover: #3399cc;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+
+    .contact-btn {
+      background: var(--accent);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    .contact-btn:hover {
+      background: var(--hover);
+    }
+
+    .toggle-mode {
+      float: right;
+      margin-top: -40px;
+      margin-right: 20px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      background: none;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      border-radius: 20px;
+      padding: 5px 12px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      padding: 0 15px;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 5px;
+    }
+
+    .projects, .blogs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project, .blog {
+      background: var(--card);
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover, .blog:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    form {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: var(--accent);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: var(--hover);
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      margin: 0 15px;
+      color: var(--accent);
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      border-top: 1px solid #ddd;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-mode">🌓 Toggle Mode</button>
+  <header>
+    <h1>CADEN SELF</h1>
+    <p>Freelance Coder & Developer – Caden Self</p>
+    <a class="contact-btn" href="#contact">Contact Me</a>
+    <a class="contact-btn" href="#fitness-tracker">Fitness Tracker</a> <!-- Fitness Tracker button -->
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I’m Caden — a freelance web developer passionate about building clean, accessible websites. I use tools like React, Node.js, Django, and more to bring ideas to life.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A fully responsive portfolio site built with HTML/CSS/JS and deployed with Netlify.</p>
+      </div>
+      <div class="project">
+        <h3>Node.js REST API</h3>
+        <p>RESTful backend with Express and MongoDB for e-commerce functionality.</p>
+      </div>
+      <div class="project" id="fitness-tracker">
+        <h3>Fitness Tracker App</h3>
+        <p>
+          A full-stack fitness tracking application built with <strong>React (frontend)</strong> and <strong>Flask (backend)</strong>.
+          Users can log workouts, monitor progress, and visualize performance over time.
+        </p>
+        <ul>
+          <li>Frontend: React + Chart.js for dynamic progress charts</li>
+          <li>Backend: Flask + SQLite for API and data storage</li>
+          <li>Authentication with Flask-Login</li>
+          <li>Deployed via Netlify (frontend) & Render (backend)</li>
+        </ul>
+<a class="contact-btn" href="https://your-fitness-app-url.com" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Blog</h2>
+    <div class="blogs">
+      <div class="blog">
+        <h3>How I Built My Portfolio</h3>
+        <p>A behind-the-scenes look at tools and tech used to create this site.</p>
+      </div>
+      <div class="blog">
+        <h3>Top 5 Tools I Use Daily</h3>
+        <p>From VS Code to Postman — the dev tools that speed up my workflow.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>JavaScript, Python, Java</li>
+      <li>React, Node.js, Django</li>
+      <li>MongoDB, MySQL</li>
+      <li>Git, GitHub, Agile</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required></textarea>
+      <button type="submit">
